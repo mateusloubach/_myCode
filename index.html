@@ -55,11 +55,31 @@
                 <button onclick="filterItems('Z')">Z</button>
             </div>
             <ul id="itemList">
-                <li>Item 1</li>
-                <li>Item 2</li>
-                <li>Item 3</li>
-                <!-- Add more list items here -->
+
+                <script>
+                    function filterItems(letter) {
+                        var itemList = document.getElementById("itemList");
+                        itemList.innerHTML = ""; // Clear previous items
+
+                        switch (letter) {
+                            case 'A':
+                                itemList.innerHTML += "<li>Apple</li>";
+                                itemList.innerHTML += "<li>Avocado</li>";
+                                break;
+                            case 'B':
+                                itemList.innerHTML += "<li>Banana</li>";
+                                itemList.innerHTML += "<li>Blueberry</li>";
+                                break;
+                            case 'C':
+                                itemList.innerHTML += "<li>Cherry</li>";
+                                itemList.innerHTML += "<li>Coconut</li>";
+                                break;
+                        }
+                    }
+                </script>
             </ul>
+        </section>
+            
         </section>
             
         </section>
